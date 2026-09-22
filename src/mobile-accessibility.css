@@ -1,0 +1,15 @@
+/* Keep financial disclosures and purchase details readable on small screens. */
+@media (max-width: 560px) {
+  .recovered-card .metric-label { flex-wrap: wrap; gap: 7px; }
+  .recovered-card .small-chip { display: inline-flex !important; font-size: 8px; }
+  .purchase-grid { grid-template-columns: 1fr; }
+  .product-visual { height: 175px; }
+  .product-visual > svg:not(.product-more) { height: 150px; width: 230px; }
+  .merchant-label, .example-tag { font-size: 9px; }
+  .purchase-card-title h3 { font-size: 16px; }
+  .purchase-date, .prices small, .card-caption { font-size: 11px; }
+  .prices strong { font-size: 20px; }
+  .badge { font-size: 10px; }
+  .recovery-amount { font-size: 12px; }
+  .tabs > button { font-size: 11px; }
+}

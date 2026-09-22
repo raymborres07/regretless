@@ -1,0 +1,42 @@
+{
+  "name": "regretless",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 127.0.0.1",
+    "backend": "convex dev",
+    "deploy": "npx @convex-dev/static-hosting deploy"
+  },
+  "dependencies": {
+    "@auth/core": "^0.41.3",
+    "@convex-dev/auth": "^0.0.95",
+    "@convex-dev/rate-limiter": "^0.4.0",
+    "@convex-dev/static-hosting": "^0.2.1",
+    "@x402/fetch": "^2.26.0",
+    "agentmail": "^0.5.27",
+    "convex": "^1.46.0",
+    "convex-helpers": "^0.1.124",
+    "lucide-react": "^1.47.0",
+    "openai": "^7.21.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "svix": "^2.5.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@edge-runtime/vm": "^5.0.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "convex-test": "^0.0.59",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
