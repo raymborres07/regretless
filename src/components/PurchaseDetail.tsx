@@ -63,7 +63,7 @@ function guidance(p: Purchase, gap: number): { title: string; body: string } {
       return { title: "Working on it…", body: "This usually takes under a minute. You can close this window. It updates live." };
     case "Eligible":
     case "Claim Ready":
-      return { title: `You can likely get ${money(p.potentialRecovery, p.currency)} back.`, body: `${store}'s policy supports a price adjustment. We wrote the request for you. Review it, then approve.` };
+      return { title: `You can likely get ${money(p.potentialRecovery > 0 ? p.potentialRecovery : gap, p.currency)} back.`, body: `${store}'s policy supports a price adjustment. We wrote the request for you. Review it, then approve.` };
     case "Request Sent":
       return { title: "Request sent. Now we wait.", body: `We'll watch for ${store}'s reply and update this page automatically.` };
     case "Merchant Replied":
